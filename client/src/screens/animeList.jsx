@@ -9,6 +9,19 @@ export const AnimeLists = () => {
     { title: "May I ask for one final thing?" },
     { title: "Haikyuu" },
     { title: "Kuroko's Basketball" },
+    { title: "Tokyo Ghoul" },
+    { title: "Solo Leveling" },
+    { title: "Wise Man's Grandchild" },
+    { title: "Food Wars" },
+    { title: "Spy Family" },
+    { title: "Sword Art Online" },
+    { title: "My Dress-up Darling" },
+    {
+      title:
+        "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+    },
+    { title: "The Mistfit of Demon King Academy" },
+    { title: "Re:Zero" },
   ];
 
   const Alphabet = [
@@ -48,7 +61,7 @@ export const AnimeLists = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-10 ">
       <h1 className="text-text-default text-xl font-bold">Anime List</h1>
 
       {Alphabet.map((alphabet) => {
