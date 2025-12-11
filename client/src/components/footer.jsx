@@ -12,34 +12,34 @@ export const Footer = () => {
           <div>
             <form className="flex flex-col gap-4" action="">
               <input
-                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default border-[#a5a5a5] border text-sm"
+                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default border-highlight-default border text-sm"
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Write your name (Optional)"
               />
               <input
-                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default border-[#a5a5a5] border text-sm"
+                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default border-highlight-default border text-sm"
                 type="email"
                 name="name"
                 id="name"
                 placeholder="Enter your email"
               />
               <textarea
-                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default min-h-30 max-h-30 border-[#a5a5a5] border text-sm resize-none"
+                className="bg-highlight-default p-2 rounded placeholder:text-[#a5a5a5] text-text-default min-h-30 max-h-30 border-highlight-default border text-sm resize-none"
                 name="message"
                 id="message"
                 placeholder="Write a message..."
               ></textarea>
               <input
-                className="bg-[#3a8eef] rounded py-2 text-text-default"
+                className="bg-accent-default rounded py-2 text-secondary-default"
                 type="submit"
                 value="Submit"
               />
             </form>
             <p className="text-sm text-text-default mt-1.5">
               By submitting this form, you agree to our{" "}
-              <a href="" className="text-blue-500">
+              <a href="" className="text-accent-default">
                 Privacy Policy
               </a>
             </p>
