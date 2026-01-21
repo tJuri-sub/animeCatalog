@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
 @theme {
+  --font-alex: Alexandria;
+
   --color-primary-default: hsl(0, 0%, 15%);
   --color-secondary-default: hsl(0, 0%, 10%);
   --color-highlight-default: hsl(0, 0%, 20%);
