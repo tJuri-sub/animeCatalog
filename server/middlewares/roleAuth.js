@@ -1,0 +1,8 @@
+export const authorize = (users) => {
+  return (req, res, next) => {
+    if (!users.includes(req.user.role)) {
+      return res.status(403).json({ message: "Permission denied" });
+    }
+    next();
+  };
+};
