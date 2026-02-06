@@ -2,7 +2,7 @@ import animeData from "../models/anime.js";
 
 export const addAnime = async (req, res) => {
   try {
-    const { animeTitle, rating } = req.body;
+    const { animeTitle, rating, description } = req.body;
 
     if (!animeTitle) {
       return res.status(400).json({
@@ -24,9 +24,16 @@ export const addAnime = async (req, res) => {
       });
     }
 
+    if (!description) {
+      return res.status(400).json({
+        error: "Description is required",
+      });
+    }
+
     const animeEntry = await animeData.create({
       animeTitle,
       rating,
+      description,
     });
 
     return res.status(201).json({ message: "anime entry added" });
